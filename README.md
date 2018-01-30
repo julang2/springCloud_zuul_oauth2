@@ -25,7 +25,7 @@ Grant Type：
 
 ### 1.基础环境
 
-使用`Postgres`作为账户存储，`Redis`作为`Token`存储，使用`docker-compose`在服务器上启动`Postgres`和`Redis`。
+使用`mysql`作为账户存储，`Redis`作为`Token`存储，使用`docker-compose`在服务器上启动`Postgres`和`Redis`。
 
 ```Yaml
 Redis:
@@ -420,4 +420,4 @@ public class RevokeTokenEndpoint {
 ```
 
 #### 6.2 注销请求方式
-![](https://raw.githubusercontent.com/wiselyman/uaa-zuul/master/images/logout.png)
+https://github.com/Joeysin/springCloud_zuul_oauth2/blob/master/images/access_token%E6%B3%A8%E9%94%80.png
