@@ -1,0 +1,19 @@
+server:
+  port: 8761
+
+eureka:
+  server:
+#    enable-self-preservation: false //关闭安全模式出来红色关闭提示字体
+    renewal-percent-threshold: 0.0  #15秒内心跳丢了20% 出现hogs 额字体 比值默认0。85 设置为0。0 红色字体消失
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    healthcheck:
+          enabled: true
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+
+
+

@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  application:
+      name: auth-server
+
+
+druid:
+      url: jdbc:mysql://localhost:3306/zuul_ouath2?characterEncoding=utf8
+      driver-class: om.mysql.jdbc.Driver
+      username: root
+      password: 111111
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      filters: stat,wall,slf4j
+
+redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: 9999
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+
+
+
+logging.level.org.springframework.security: DEBUG
+
+logging.leve.org.springframework: DEBUG
+
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+
+mybatis:
+  type-aliases-package: com.hfcsbc.domain
+  mapper-locations: classpath:mapper/*.xml
+  mappers: com.hfcsbc.dao.**
+  configuration-properties:
+    offsetAsPageNum: true
+    rowBoundsWithCount: true
+    reasonable: true

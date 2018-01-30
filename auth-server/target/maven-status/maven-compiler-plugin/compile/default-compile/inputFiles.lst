@@ -1,0 +1,13 @@
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/security/DomainUserDetailsService.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/config/ResourceServerConfig.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/endpoint/RevokeTokenEndpoint.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/domain/SysRole.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/domain/SysUser.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/config/SecurityConfig.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/controller/UserController.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/domain/AbstractAuditingEntity.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/security/SecurityUtils.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/domain/SysAuthority.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/util/Constants.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/config/AuthorizationServerConfig.java
+/MIrror Desktop/Git_LocalStore/springCloud-zuul-ouath2/auth-server/src/main/java/com/hfcsbc/AuthServerApplication.java

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hfcsbc.dao.SystemUserDao">
+    <resultMap type="com.hfcsbc.domain.SystemUser" id="SystemUser">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="password" column="password"></result>
+        <result property="email" column="email"></result>
+        <result property="activated" column="activated"></result>
+        <result property="createDate" column="create_date"></result>
+        <result property="resetDate" column="reset_date"></result>
+    </resultMap>
+
+    <select id="findSystenUserByname" parameterType="String" resultMap="SystemUser">
+        SELECT id,username,password,email,activated,create_date AS createDate,reset_date AS resetDate FROM system_user WHERE binary username=#{name}
+    </select>
+</mapper>
