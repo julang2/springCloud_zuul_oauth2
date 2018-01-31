@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.hfcsbc.dao.SystemUserDao">
-    <resultMap type="com.hfcsbc.domain.SystemUser" id="SystemUser">
+<mapper namespace="com.springCloud.dao.SystemUserDao">
+    <resultMap type="com.springCloud.domain.SystemUser" id="SystemUser">
         <id property="id" column="id"></id>
         <result property="username" column="username"></result>
         <result property="password" column="password"></result>

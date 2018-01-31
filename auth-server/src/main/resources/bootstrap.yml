@@ -42,9 +42,9 @@ security:
       filter-order: 3
 
 mybatis:
-  type-aliases-package: com.hfcsbc.domain
+  type-aliases-package: com.springCloud.domain
   mapper-locations: classpath:mapper/*.xml
-  mappers: com.hfcsbc.dao.**
+  mappers: com.springCloud.dao.**
   configuration-properties:
     offsetAsPageNum: true
     rowBoundsWithCount: true
