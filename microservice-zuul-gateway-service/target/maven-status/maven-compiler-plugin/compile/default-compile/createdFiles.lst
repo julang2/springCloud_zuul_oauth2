@@ -1,0 +1,4 @@
+com/springCloud/config/SecurityConfig.class
+com/springCloud/ApiGatewayApplication.class
+com/springCloud/fallbacks/ServiceFallbackProvider.class
+com/springCloud/fallbacks/ServiceFallbackProvider$1.class

@@ -1,0 +1,24 @@
+server:
+  port: 8761
+eureka:
+  environment: prod
+  datacenter: Data Center:8761
+  server:
+    renewal-percent-threshold: 0.0
+  instance:
+    hostname: localhost
+
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: microservice-discovery-eureka-service
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: admin
