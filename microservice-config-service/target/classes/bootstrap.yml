@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: default
+  application:
+    name: microservice-config-service
+#  config:
+#    location: https://github.com/Joeysin/Config-Repo.git
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          uri: https://github.com/Joeysin/Config-Repo.git
+#          searchPaths: blob/master
+#          username: username
+#          password: password
+      label: master
+
+
+
+
+server:
+  port: 8888
+
+
+eureka:
+  client:
+    fetchRegistry: false
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+
+
+
+
+
+
+
+
