@@ -2,12 +2,14 @@
 
 在`Spring Cloud`需要使用`OAUTH2`来实现多个微服务的统一认证授权，通过向`OAUTH服务`发送某个类型的`grant type`进行集中认证和授权，从而获得`access_token`，而这个token是受其他微服务信任的，我们在后续的访问可以通过`access_token`来进行，从而实现了微服务的统一认证授权。
 
-本示例提供了四大部分：
+本示例提供了几大部分：
 
-- `discovery-service`:服务注册和发现的基本模块
-- `auth-server`:OAUTH2认证授权中心
-- `order-service`:普通微服务，用来验证认证和授权
-- `api-gateway`:边界网关(所有微服务都在它之后)
+- `microsservice-discovery-eureka-service`:服务注册和发现的基本模块
+- `microsservice-oauth2-server`:OAUTH2认证授权中心
+- `microsservice-order-service`:普通微服务，用来验证认证和授权
+- `microservice-order-service-ribbon-hystrix`:普通微服务，用来验证order服务的负载均衡和断路器
+- `microservice-zuul-gateway-service`:边界网关(所有微服务都在它之后)
+- `microservice-config-service`:配置中心
 
 OAUTH2中的角色：
 
@@ -36,11 +38,11 @@ Redis:
     - /srv/docker/redis:/var/lib/redis:Z
   restart: always
 
-PostgreSQL:
+MySQL:
   restart: always
-  image: sameersbn/postgresql:9.6-2
+  image: sameersbn/mysql5.7
   ports:
-    - "5432:5432"
+    - "3306:3306"
   environment:
     - DEBUG=false
 

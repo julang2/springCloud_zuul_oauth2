@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
  * Created by Joeysin on 2017/1/31.
  */
 @RestController
+@RefreshScope
 public class DemoController {
 
     @Value("${logging.level.org.springframework.security}")
@@ -30,7 +31,6 @@ public class DemoController {
 
     @GetMapping("/getMovingParam")
     @PreAuthorize("permitAll()")
-    @RefreshScope
     public String getMovingParam() {
         return param;
     }
