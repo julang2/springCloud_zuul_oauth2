@@ -27,31 +27,8 @@ Grant Type：
 
 ### 1.基础环境
 
-使用`mysql`作为账户存储，`Redis`作为`Token`存储，使用`docker-compose`在服务器上启动`Postgres`和`Redis`。
+使用`mysql`作为账户存储，`Redis`作为`Token`存储，`在服务器上启动`mysql`和`Redis`。
 
-```Yaml
-Redis:
-  image: sameersbn/redis:latest
-  ports:
-    - "6379:6379"
-  volumes:
-    - /srv/docker/redis:/var/lib/redis:Z
-  restart: always
-
-MySQL:
-  restart: always
-  image: sameersbn/mysql5.7
-  ports:
-    - "3306:3306"
-  environment:
-    - DEBUG=false
-
-    - DB_USER=wang
-    - DB_PASS=yunfei
-    - DB_NAME=order
-  volumes:
-    - /srv/docker/postgresql:/var/lib/postgresql:Z
-```
 
 
 

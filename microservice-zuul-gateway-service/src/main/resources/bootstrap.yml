@@ -30,10 +30,6 @@ zuul:
       path: /order/**
       sensitiveHeaders:
       serviceId: microservice-order-service
-    config:
-      path: /config/**
-      sensitiveHeaders:
-      serviceId: microservice-config-service
 
 
   add-proxy-headers: true
