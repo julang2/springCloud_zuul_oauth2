@@ -1,0 +1,31 @@
+spring:
+    application:
+      name: microservice-oauth2-service
+
+
+
+    cloud:
+     config:
+           discovery:
+             enabled: true
+             service-id: microservice-config-service
+           label: master
+           profile: prod
+
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+  instance:
+      lease-expiration-duration-in-seconds: 30
+      lease-renewal-interval-in-seconds: 10
+
+
+
+
+
+
+

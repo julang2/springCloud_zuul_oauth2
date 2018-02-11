@@ -29,7 +29,7 @@ public class DemoController {
 
     @GetMapping("/getMovingParam")
     public String getMovingParam() {
-        return param;
+        return param + "_2";
     }
 
     public String demoFallback() {

@@ -32,7 +32,7 @@ public class DemoController {
     @GetMapping("/getMovingParam")
     @PreAuthorize("permitAll()")
     public String getMovingParam() {
-        return param;
+        return param + "_1";
     }
 
     public String demoFallback() {

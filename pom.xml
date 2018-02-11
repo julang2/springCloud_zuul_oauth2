@@ -15,6 +15,7 @@
         <module>microservice-order-service</module>
         <module>microservice-order-service-ribbon-hystrix</module>
         <module>microservice-config-service</module>
+        <module>microservice-config-client-refresh-bus-service</module>
     </modules>
 
     <properties>
@@ -66,7 +67,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.SR6</version>
+                <version>Camden.SR7</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

@@ -1,0 +1,38 @@
+server:
+  port: 8084
+
+spring:
+  application:
+      name: microservice-order-service
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: microservice-config-service
+      label: master
+      profile: prod
+
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+  instance:
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+
+
+
+
+
